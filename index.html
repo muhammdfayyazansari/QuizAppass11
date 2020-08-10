@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+       
+        <div class="welcome"><center>
+            <input id="getuser" type="text" name="name" placeholder="Name">
+            <button onclick="startQuiz()" type="submit">Start Quiz</button></center>
+        </div>
+    </div>
+    <div class="main_content" id="mainContent">
+        <div class="final_content" >
+            <br>
+            <br>
+            <div id="final_content" class="final_content1">
+                <h2 id="heading"> Q1. What is the full form of CPU?</h2>
+                <br>
+                <ul>
+                    <li> &nbsp;&nbsp;&nbsp; <input type="radio" value="Central Processing Unit" class="livalue"
+                            name="buttone"> Central Processing Unit</li><br>
+                    <li> &nbsp;&nbsp;&nbsp; <input type="radio" value="Central Programming Unit" class="livalue"
+                            name="buttone"> Central Programming Unit </li><br>
+                    <li> &nbsp;&nbsp;&nbsp; <input type="radio" value="Center Permaent Unit" class="livalue" name="buttone">
+                        Center Permaent Unit </li><br>
+                    <li> &nbsp;&nbsp;&nbsp; <input type="radio" value="None of the above" class="livalue" name="buttone">
+                        None of the above </li><br><br>
+                    <br>
+                    <li> &nbsp;&nbsp;&nbsp; <button onclick="nextQuestion()" id="Next" class="Next">Next</button>  <button class="Next" id="submit" onclick="result()">Submit</button></li><br>
+    
+                </ul>
+                
+            </div>
+            <div id="final_result" class="final_result">
+
+                <h3><span>&nbsp;&nbsp; Name: </span><span id="username"></span></h3> <br>
+                <h3><span>&nbsp;&nbsp; Questions: </span><span id="allques"></span></h3><br>
+                <h3><span>&nbsp;&nbsp; Score: </span><span id="score"></span></h3>
+            </div>
+        </div>
+        
+    </div>
+
+ 
+    <script src="./app.js"></script>
+</body>
+
+</html>
